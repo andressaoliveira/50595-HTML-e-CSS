@@ -1,0 +1,45 @@
+.azul,
+.amarela {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.espaco{
+    position: relative;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.amarela{
+    background-color: yellow;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+.menu__item{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.submenu{
+    position: absolute;
+    display: none;
+    background-color: white;
+    height: 85px;
+    width: 100px;
+    background-color: red;
+}
+
+.com-submenu:hover .submenu{
+    display: block;
+}
