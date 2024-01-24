@@ -1,0 +1,96 @@
+.colorido {
+    color: red;
+}
+
+.colorido:hover {
+    color: blue;
+}
+
+
+
+a:active {
+    background-color: pink;
+    color: red;
+}
+
+a:visited {
+    color: yellow;
+}
+
+input:focus {
+    background-color: aqua;
+    color: blueviolet;
+}
+
+h2:active {
+    color: green;
+}
+
+
+/* li:nth-child(2n+1){
+    color: blue;
+}
+
+li:nth-child(even){ 
+    color: red;
+}
+
+li:first-child {
+    color: blueviolet;
+}
+
+li:last-child {
+    color: brown;
+} */
+
+li:not(.meu-item) {
+    color: orange;
+}
+
+
+input[type="checkbox"]:checked {
+    margin-left: 25px;
+}
+
+option:checked {
+    color: red;
+    background-color: blueviolet;
+}
+
+input:disabled {
+    background-color: aquamarine;
+}
+
+input[type="email"]:valid {
+    background-color: green;
+}
+
+input[type="email"]:invalid {
+    background-color: red;
+}
+:required{
+    background-color: blueviolet;
+}
+
+::placeholder{
+    color: red;
+}
+
+p::first-letter{
+    color: chartreuse;
+    text-transform: uppercase;
+}
+
+p::first-line{
+    color: black;
+}
+
+.colorido::selection{
+    color: red;
+    background-color: aqua;
+}
+
+::marker{
+    color: crimson;
+    font-size: 25px;
+}
