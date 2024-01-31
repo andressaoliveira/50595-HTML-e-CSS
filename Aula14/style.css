@@ -1,0 +1,92 @@
+.paragrafo {
+    background-image: radial-gradient(red 0% 60%, blue 60% 100%);
+}
+
+.caixa {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    /* transform: translate(10px, 20px); */
+    /* transform: translateY(50px); */
+    /* transform: rotateZ(30deg); */
+    /* transform: scale(2, 2); */
+    transform: skewY(20deg);
+    margin: 50px;
+}
+
+.caixa-amarela {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transition: all 3s;
+}
+
+.caixa-amarela:hover {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+
+input {
+    margin-top: 30px;
+    height: 100px;
+    width: 100px;
+    transition: width 2s;
+}
+
+input:focus {
+    width: 200px;
+}
+
+h1 {
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        color: red;
+    }
+
+    100% {
+        opacity: 1;
+        color: blue;
+    }
+}
+
+
+.caixa-maluca {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: um_efeito;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+@keyframes um_efeito {
+    0% {
+        width: 100px;
+    }
+
+    25% {
+        width: 300px;
+    }
+
+    50% {
+        width: 200px;
+        background-color: red;
+    }
+
+    75% {
+        width: 300px;
+    }
+
+    100% {
+        width: 100px;
+        background-color: green;
+    }
+}
