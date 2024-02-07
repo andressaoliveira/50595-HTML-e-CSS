@@ -1,0 +1,33 @@
+body {
+    display: flex;
+}
+
+.container-1 {
+    width: 70%;
+}
+
+.container-2 {
+    display: flex;
+}
+
+nav {
+    background-color: orangered;
+    width: 30%;
+}
+
+header,
+footer {
+    background-color: aqua;
+    height: 80px;
+}
+
+main {
+    background-color: purple;
+    height: 500px;
+    width: 70%;
+}
+
+aside {
+    background-color: orange;
+    width: 30%;
+}
