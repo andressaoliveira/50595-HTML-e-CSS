@@ -1,0 +1,41 @@
+#grid {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "verde verde azul azul azul"
+        "verde verde laranja laranja escuro"
+        "rosa rosa laranja laranja marrom";
+    gap: 10px;
+}
+
+#verde {
+    grid-area: verde;
+    background-color: greenyellow;
+}
+
+#rosa {
+    grid-area: rosa;
+    background-color: rosybrown;
+}
+
+#azul {
+    grid-area: azul;
+    background-color: aquamarine;
+}
+
+#laranja {
+    grid-area: laranja;
+    background-color: orange;
+}
+
+#escuro {
+    grid-area: escuro;
+    background-color: burlywood;
+}
+
+#marrom {
+    grid-area: marrom;
+    background-color: brown;
+}
