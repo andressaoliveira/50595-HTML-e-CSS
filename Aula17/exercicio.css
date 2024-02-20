@@ -1,83 +1,41 @@
-body {
+#grid {
+    width: 300px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 50px);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-        "header" "content" "content" "sign-up" "laranja" "vermelha" "roxa";
+        "verde verde azul azul azul"
+        "verde verde laranja laranja escuro"
+        "rosa rosa laranja laranja marrom";
+    gap: 10px;
 }
 
-header {
-    grid-area: header;
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#verde {
+    grid-area: verde;
+    background-color: greenyellow;
 }
 
-#content {
-    grid-area: content;
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#rosa {
+    grid-area: rosa;
+    background-color: rosybrown;
 }
 
-#sign-up {
-    grid-area: sign-up;
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#azul {
+    grid-area: azul;
+    background-color: aquamarine;
 }
 
-#feature-laranja {
+#laranja {
     grid-area: laranja;
     background-color: orange;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-#feature-vermelha {
-    grid-area: vermelha;
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#escuro {
+    grid-area: escuro;
+    background-color: burlywood;
 }
 
-#feature-roxa {
-    grid-area: roxa;
-    background-color: purple;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-    body {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "header header"
-            "content content"
-            "content content"
-            "sign-up laranja"
-            "vermelha roxa"
-        ;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    body {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-            "header header header"
-            "header header header"
-            "laranja roxa vermelha"
-            "laranja roxa vermelha"
-            "sign-up sign-up sign-up"
-            "content content content"
-            "content content content"
-        ;
-    }
+#marrom {
+    grid-area: marrom;
+    background-color: brown;
 }

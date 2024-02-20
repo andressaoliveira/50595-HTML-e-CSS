@@ -1,56 +1,84 @@
-.container {
+.grid {
     display: grid;
-    grid-template-columns: 100px auto 100px;
-    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-rows: 3fr 1fr;
     gap: 10px;
-    grid-template-areas:
-        "header header header"
-        "nav main aside"
-        ". footer .";
 }
 
-header {
+#layout {
+    display: grid;
+    grid-template-columns: 200px auto 150px;
+    grid-template-rows: 100px 200px 200px 75px;
+    grid-template-areas:
+        ". header header"
+        "nav produtos publicidade"
+        "nav servicos publicidade"
+        "nav none footer";
+}
+
+#header {
     grid-area: header;
+    background-color: aqua;
+    /* justify-self: start;
+    align-self: end; */
+}
+
+#nav {
+    grid-area: nav;
+    background-color: blueviolet;
+}
+
+#produtos {
+    grid-area: produtos;
+    background-color: blue;
+}
+
+#servicos {
+    grid-area: servicos;
     background-color: red;
 }
 
-nav {
-    grid-area: nav;
-    background-color: fuchsia;
-}
-
-main {
-    grid-area: main;
+#publi {
+    grid-area: publicidade;
     background-color: green;
 }
 
-aside {
-    grid-area: aside;
+#rodape {
+    grid-area: footer;
     background-color: yellow;
 }
 
-footer {
-    grid-area: footer;
-    background-color: gray;
+
+
+
+#exercicio {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 100px 400px 100px;
+    grid-template-areas:
+        "head head"
+        "menu sec"
+        "menu foot";
+    gap: 10px;
+    justify-content: space-between;
 }
 
-@media (min-width: 768px) {
-    .container {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-            "nav nav header header"
-            "nav nav main main"
-            "aside footer footer .";
-    }
+#head {
+    grid-area: head;
+    background-color: green;
 }
 
-@media (min-width: 1024px) {
-    .container {
-        grid-template-columns: 2fr 1fr;
-        grid-template-areas:
-            "header header"
-            "nav nav"
-            "main aside"
-            "footer footer";
-    }
+#menu {
+    grid-area: menu;
+    background-color: palevioletred;
+}
+
+#sec {
+    grid-area: sec;
+    background-color: orange;
+}
+
+#foot {
+    grid-area: foot;
+    background-color: aquamarine;
 }
