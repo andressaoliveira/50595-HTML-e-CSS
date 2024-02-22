@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 19</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Destaques</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Preços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Desativado</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">
+        <h1>Aula 19</h1>
+        <p class="dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius recusandae id quae, fugit,
+            voluptatum
+            accusamus tempore aliquid laboriosam quo eum excepturi consequatur reprehenderit adipisci. Eveniet ipsam
+            repellendus vitae ullam!</p>
+
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <table class="table table-dark table-striped">
+            <tr><!-- início da linha do cabeçalho-->
+                <th>Cabeçalho 1</th>
+                <th>Cabeçalho 2</th>
+                <th>Cabeçalho 3 </th>
+            </tr><!-- final da linha do cabeçalho-->
+
+            <tr><!-- início da primeira linha-->
+                <td>Linha 1 - Coluna 1</td>
+                <td>Linha 1 - Coluna 2</td>
+                <td>Linha 1 - Coluna 3</td>
+            </tr><!-- final da primeira linha -->
+
+            <tr><!-- início da segunda linha-->
+                <td>Linha 2 - Coluna 1</td>
+                <td>Linha 2 - Coluna 2</td>
+                <td>Linha 2 - Coluna 3</td>
+            </tr><!-- final da segunda linha -->
+        </table>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">Conteúdo</div>
+            <div class="col-6">Conteúdo</div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+                <table class="table table-dark table-striped">
+                    <tr><!-- início da linha do cabeçalho-->
+                        <th>Cabeçalho 1</th>
+                        <th>Cabeçalho 2</th>
+                        <th>Cabeçalho 3 </th>
+                    </tr><!-- final da linha do cabeçalho-->
+
+                    <tr><!-- início da primeira linha-->
+                        <td>Linha 1 - Coluna 1</td>
+                        <td>Linha 1 - Coluna 2</td>
+                        <td>Linha 1 - Coluna 3</td>
+                    </tr><!-- final da primeira linha -->
+
+                    <tr><!-- início da segunda linha-->
+                        <td>Linha 2 - Coluna 1</td>
+                        <td>Linha 2 - Coluna 2</td>
+                        <td>Linha 2 - Coluna 3</td>
+                    </tr><!-- final da segunda linha -->
+                </table>
+            </div>
+
+            <div class="col">
+                <table class="table table-striped">
+                    <tr><!-- início da linha do cabeçalho-->
+                        <th>Cabeçalho 1</th>
+                        <th>Cabeçalho 2</th>
+                        <th>Cabeçalho 3 </th>
+                    </tr><!-- final da linha do cabeçalho-->
+
+                    <tr><!-- início da primeira linha-->
+                        <td>Linha 1 - Coluna 1</td>
+                        <td>Linha 1 - Coluna 2</td>
+                        <td>Linha 1 - Coluna 3</td>
+                    </tr><!-- final da primeira linha -->
+
+                    <tr><!-- início da segunda linha-->
+                        <td>Linha 2 - Coluna 1</td>
+                        <td>Linha 2 - Coluna 2</td>
+                        <td>Linha 2 - Coluna 3</td>
+                    </tr><!-- final da segunda linha -->
+                </table>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nemo commodi possimus quia facilis dolor
+                pariatur mollitia repellat, dignissimos, iusto, error perferendis ad cupiditate maiores non modi vel
+                corrupti doloremque?</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <legend>Informações pessoais</legend>
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control">
+                <input type="password" class="form-control">
+                <label for="email">Email</label>
+                <input type="email" class="form-control">
+                <textarea></textarea>
+            </div>
+
+
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-danger">Limpar</button>
+            <button class="btn btn-warning">Limpar</button>
+            <br><br>
+
+            <fieldset>
+                <legend>Genero</legend>
+                <label for="genero">Gênero</label>
+                <input type="radio" name="genero" value="m"> masculino
+                <input type="radio" name="genero" value="f"> feminino
+                <input type="radio" name="genero" value="o"> outro
+                <br><br>
+                <input type="checkbox"> Aceito os termos 1
+                <br>
+                <input type="checkbox"> Aceito os termos 2
+                <br>
+                <input type="checkbox"> Aceito os termos 3
+            </fieldset>
+            <br><br>
+
+            <label for="tamanho">Escolha o tamanho:</label>
+            <select name="tamanho">
+                <option value="g">Grande</option>
+                <option value="m">Médio</option>
+                <option value="p">Pequeno</option>
+            </select>
+        </form>
+    </div>
+
+    <br><br><br>
+    <div class="container">
+        <!-- Exemplo de único botão danger -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Ação
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Alguma ação</a>
+                <a class="dropdown-item" href="#">Outra ação</a>
+                <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Link separado</a>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
