@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: #222d35;
+    height: 70px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+
+    & img {
+        height: 50px;
+    }
+}
+
+main {
+    padding: 50px 80px;
+
+    & h2 {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+
+    & h1 {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 24px;
+    }
+
+    & .imagem {
+        display: flex;
+        justify-content: end;
+    }
+
+    & #lista-itens {
+        font-size: 12px;
+
+        & li {
+            border-top: 1px solid rgb(241, 240, 240);
+            color: gray;
+            list-style-type: none;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            background-image: url(images/check.svg);
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+    }
+
+    & #valor {
+        font-size: 24px;
+        color: black;
+        text-align: end;
+    }
+
+    & #matricular {
+        display: flex;
+        justify-content: end;
+
+    }
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ed143d;
+    height: 45px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+
+#sobre-unidade {
+    display: flex;
+    background-color: rgb(248, 249, 250);
+    padding: 30px 0;
+
+    & #imagem {
+        display: flex;
+        justify-content: center;
+    }
+
+    & div {
+        width: 50%;
+    }
+
+    & img {
+        width: 200px;
+        height: 275px;
+    }
+
+    & #conteudo {
+        padding-right: 100px;
+
+        & h3 {
+            font-weight: 400;
+            padding-bottom: 10px;
+        }
+
+        & p {
+            color: gray;
+            line-height: 30px;
+            font-size: 20px;
+        }
+    }
+}
+
+#video-unidade {
+    background-color: rgb(34, 45, 53);
+    display: flex;
+    padding: 0 90px;
+    justify-content: center;
+}
+
+#contato-unidade {
+    display: flex;
+    padding: 30px 0;
+    margin-bottom: 100px;
+    
+    & h2 {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+
+    & h1 {
+        padding-bottom: 30px;
+        font-size: 24px;
+    }
+
+    & #mapa{
+        padding: 30px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    & div {
+        padding-bottom: 20px;
+        width: fit-content;
+
+        & .info{
+            font-weight: 700;
+        }
+    }
+}
